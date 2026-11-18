@@ -1,0 +1,75 @@
+// EDIT ME: all words and media paths live here. Files go in public/media/<path>.
+// Text starting with [EDIT] is a placeholder for a real detail only you know.
+export type Theme = 'navy' | 'green' | 'ivory'
+export type Kind = 'envelope' | 'cover' | 'text' | 'frames' | 'timeline' | 'notes' | 'media' | 'slot' | 'scratch' | 'museum' | 'vinyl' | 'capsule' | 'yesno' | 'puzzle' | 'waxletter' | 'box' | 'bow' | 'rise' | 'tree'
+export interface Item { t: string; d: string; img?: string }
+export interface Chapter {
+  id: string; title: string; kicker: string; theme: Theme; kind: Kind
+  body?: string[]; items?: Item[]
+  media?: { type: 'video' | 'audio'; src: string; poster?: string }
+}
+export const PASSCODE = '2511' // her birthday, DDMM. A surprise gate, not real security.
+const E = '[EDIT] '
+const nums = (n: number) => Array.from({ length: n }, (_, k) => k + 1)
+export const chapters: Chapter[] = [
+  { id: '01', title: 'The Envelope', kicker: 'For Anjani', theme: 'navy', kind: 'envelope', body: ['Something small, made slowly, just for you.'] },
+  { id: '02', title: 'Anjani', kicker: "The Collector's Edition · One copy only", theme: 'green', kind: 'cover', items: [{ t: 'Her, in frame', d: '04' }, { t: 'The bus, the diary, the little things', d: '05–06' }, { t: 'Letters for every mood', d: '08' }] },
+  { id: '03', title: "The Editor's Note", kicker: 'Why this exists', theme: 'ivory', kind: 'yesno', body: [
+    'Hi Anjani.',
+    'Most magazines are made for thousands of people. This one is made for exactly one, and she is the only reader that matters to me.',
+    'It started on a bus, with a conversation that somehow never really ended. Everything in here is a little proof of that.',
+    E + 'add one honest sentence about why you made this.',
+    'So sit comfortably, tap everything, and take your time. ♡'] },
+  { id: '04', title: 'Her, in Frame', kicker: 'Photography', theme: 'navy', kind: 'scratch', items: [
+    ['The smile', 'the one that shows up before you decide to'], ['The look', 'the one that says "really?"'], ['The laugh', 'impossible to be sad near it'],
+    ['The quiet', 'when you are thinking and pretending you are not'], ['The in-between', 'my favourite kind of photo'], ['The you', 'no caption needed']]
+    .map(([t, d], n) => ({ t, d: d + ' ' + E + 'swap for a real caption', img: `photos/frame-${n + 1}.jpg` })) },
+  { id: '05', title: 'The Beginning', kicker: 'Fix the photo to read our story', theme: 'ivory', kind: 'puzzle', items: [
+    { t: 'The bus', d: 'Two strangers, one bus, and a conversation that decided to stay. Best seat I never planned to take. ' + E + 'add the date and what you said first.' },
+    { t: 'The diary', d: 'I made you a diary, because some things deserve to be written down and kept. Every page was a way of saying "I was thinking of you". ' + E + 'add what you wrote on page one.' },
+    { t: 'Movies & small moments', d: 'We collect them: films, snacks, silly arguments, ordinary evenings that turned out not to be ordinary. ' + E + 'name your favourite film together.' },
+    { t: 'March 6', d: 'A date that quietly changed things. I think about it more than I admit. ' + E + 'say what happened.' },
+    { t: 'TRP Mall', d: 'Our first kiss. I will remember that place for the rest of my life. ' + E + 'add your own words.' },
+    { t: 'March 7', d: E + 'say what this milestone is. It deserves its own line.' }] },
+  { id: '06', title: 'The Little Things', kicker: 'Pull the lever', theme: 'green', kind: 'slot', items: [
+    { t: 'The bus', d: 'It all began with a seat and a conversation that never really ended. Best ride of my life.' },
+    { t: 'The diary', d: 'I made it for you because some feelings need pages. ' + E + 'add what you wrote.' },
+    { t: 'Movie nights', d: 'Even a bad film is a good film when you are next to me. ' + E },
+    { t: 'TRP Mall', d: 'Our first kiss. I still smile about it more than I admit.' },
+    { t: 'Your little habits', d: E + 'a habit of hers that you secretly love.' },
+    { t: 'Just you', d: 'No reason needed. Happy birthday, Anjani ♡' }] },
+  { id: '07', title: 'The Archive', kicker: 'Exhibition', theme: 'ivory', kind: 'museum', items: nums(6).map(n => ({ t: `Exhibit ${String(n).padStart(2, '0')}`, d: E + 'date · place · what was happening', img: `photos/memory-${n}.jpg` })) },
+  { id: '08', title: 'The Birthday Box', kicker: 'Open when…', theme: 'navy', kind: 'box', items: [
+    ['you miss me', 'Close your eyes for ten seconds. I am doing the same thing right now. ♡'],
+    ['you feel low', 'You are allowed to have a bad day. You are not allowed to forget how loved you are.'],
+    ['you need a smile', 'Remember the bus? Neither of us planned any of this. Smile, the universe has a sense of humour.'],
+    ['you cannot sleep', 'Breathe in slowly. Whatever is loud in your head can wait until tomorrow. I will be here.'],
+    ['you need reassurance', 'You are enough, exactly as you are today. ' + E + 'add your own line.'],
+    ['you want to remember us', 'Think of the bus, the diary, March 6, TRP Mall. Then smile, and call me.']].map(([t, d]) => ({ t: 'Open when ' + t, d })) },
+  { id: '09', title: 'The Love Letter', kicker: 'Break the seal', theme: 'ivory', kind: 'waxletter', body: [
+    'Dear Anjani,',
+    'I do not have a perfect sentence for what you are to me. So I wrote a whole magazine and hoped it would add up to one.',
+    E + 'a paragraph about how she changed your days.',
+    E + 'a paragraph about what you are grateful for.',
+    'Always yours.'] },
+  { id: '10', title: 'A Little Film', kicker: 'Cinema', theme: 'green', kind: 'media', media: { type: 'video', src: 'videos/film.mp4', poster: 'photos/film-poster.jpg' } },
+  { id: '11', title: 'The Soundtrack', kicker: 'Side A', theme: 'navy', kind: 'vinyl', media: { type: 'audio', src: 'audio/song.mp3' } },
+  { id: '12', title: 'Pop the Hearts', kicker: 'Aim, shoot, smile', theme: 'green', kind: 'bow', items: [
+    ['Bullseye!', 'Found one. Proof that you are impossible to miss.'],
+    ['Pop!', 'Reminder: you are somebody’s favourite person. Mine.'],
+    ['Nice aim', 'Whatever you aim for this year, you will hit it.'],
+    ['Cupid called', 'He says he has nothing left to teach us.'],
+    ['Little secret', E + 'write a secret only she would understand.'],
+    ['Last one!', 'Happy birthday, Anjani. Thank you for being you ♡']].map(([t, d]) => ({ t, d })) },
+  { id: '13', title: 'Make a Wish', kicker: 'Our forever', theme: 'navy', kind: 'rise', body: ['Happy', 'Birthday'], items: [
+    { t: 'More movie nights', d: 'with too many snacks and terrible commentary. ' + E },
+    { t: 'More small adventures', d: 'especially the ones that start with “let us just see”.' },
+    { t: 'More of you', d: 'honestly, that is the whole plan.' },
+    { t: 'Our promise', d: E + 'write one promise you really mean.' }] },
+  { id: '14', title: 'The Last Page', kicker: 'Fin', theme: 'ivory', kind: 'capsule', body: [
+    'You made it to the last page.',
+    'Whatever the year brings, I hope it brings you softness, luck, and people who adore you.',
+    E + 'your final personal line.',
+    'Happy birthday, Anjani ♡'] },
+  { id: '15', title: 'The Edition Archive', kicker: 'Revisit', theme: 'ivory', kind: 'tree', body: ['Here is to a year that blossoms'] },
+]
