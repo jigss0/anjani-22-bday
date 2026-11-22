@@ -22,7 +22,7 @@ export const chapters: Chapter[] = [
     'So sit comfortably, tap everything, and take your time. ♡'] },
   { id: '04', title: 'Her, in Frame 🌸', kicker: 'Photography', theme: 'navy', kind: 'scratch', items: [
     ['Our Moments 😚', 'the one that shows up before you decide to kiss me '], ['The look', 'the one that says "really? and asks how she is so beautiful 😭"'], ['My Pookie 🎀', 'impossible to say her she looks so much adorable and she is the bestest '],
-    ['Her Cuteness ', 'How can someone look this pretty without even trying'], ['The in-between', 'Even the camera knows you're special'], ['The you in my eyes', 'And somehow I still can't get enough of you']]
+    ['Her Cuteness ', 'How can someone look this pretty without even trying'], ['The in-between', 'Even the camera knows you’re special'], ['The you in my eyes', 'And somehow I still can't get enough of you']]
     .map(([t, d], n) => ({ t, d: d + ' ' + E + 'swap for a real caption', img: `photos/frame-${n + 1}.jpg` })) },
   { id: '05', title: 'It is Your Day 🫣💕', kicker: 'Fix the photo to read our story touch the photos then touch again where it fits 😉', theme: 'ivory', kind: 'puzzle', items: [
     { t: 'The bus', d: 'Two strangers, one bus, and a conversation that decided to stay. Best seat I never planned to take. ' + E + 'the first convocation day to the our convocation day ... time flew and we grew 🫶🏻' },
@@ -33,12 +33,12 @@ export const chapters: Chapter[] = [
     { t: 'March 7', d: E + '7 March 2024… the day I asked you to be mine And it was little not professional i admit but 🥹🥹 ... that Kurkure moment became a part of our story too ♡.' }] },
   { id: '06', title: 'The Little Things', kicker: 'Pull the lever', theme: 'green', kind: 'slot', items: [
     { t: 'What i loves most', d: 'The way you get all excited over little things.' },
-    { t: 'Your Face', d: 'Those adorable expressions you don't even notice. ' },
+    { t: 'Your Face', d: 'Those adorable expressions you don’t even notice. ' },
     { t: 'Movie nights', d: 'Even a bad film is a good film when you are next to me. ' + E },
     { t: 'TRP Mall', d: 'From Our first kiss yo till today we go to trp and remember everything ... I still smile about it more than I admit.' },
     { t: 'Your little habits', d: E + 'like when yiu get angry and slaps me and then kiss my cheek.' },
     { t: 'Just you', d: 'No reason needed. Happiest birthday my Anjiiii ♡' }] },
-  { id: '07', title: 'The Archive', kicker: 'Exhibition from First Bday to This one (yet to be added) ', theme: 'ivory', kind: 'museum', items: nums(6).map(n => ({ t: `Exhibit ${String(n).padStart(2, '0')}`, d: E + 'Look how much we've grown since this one', img: `photos/memory-${n}.jpg` })) },
+  { id: '07', title: 'The Archive', kicker: 'Exhibition from First Bday to This one (yet to be added) ', theme: 'ivory', kind: 'museum', items: nums(6).map(n => ({ t: `Exhibit ${String(n).padStart(2, '0')}`, d: E + 'Look how much we’ve grown since this one', img: `photos/memory-${n}.jpg` })) },
   { id: '08', title: 'The Birthday Box', kicker: 'Open when…', theme: 'navy', kind: 'box', items: [
     ['you miss me', 'Close your eyes for ten seconds. I am doing the same thing right now. ♡'],
     ['you feel low', 'You are allowed to have a bad day. You are not allowed to forget how loved you are.'],
@@ -60,7 +60,7 @@ export const chapters: Chapter[] = [
     ['Nice aim', 'Whatever you aim for this year, you will hit it💯🫡'],
     ['Cupid called', 'I would choose our little world again.'],
     ['Little secret', E + 'I love to give tou teas and i love to hear it from you'],
-    ['Last one!', 'Happy birthday, Anjani. Thank you for being you ♡You're my favourite notification']].map(([t, d]) => ({ t, d })) },
+    ['Last one!', 'Happy birthday, Anjani. Thank you for being you ♡ You’re my favourite notification']].map(([t, d]) => ({ t, d })) },
   { id: '13', title: 'Make a Wish', kicker: 'Our forever', theme: 'navy', kind: 'rise', body: ['Happy', 'Birthday'], items: [
     { t: '🥹🧿', d: 'I wish you always keep that beautiful smile. ' + E },
     { t: '😚🌸', d: 'I wish you achieve everything you're working for .' },
