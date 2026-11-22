@@ -63,13 +63,13 @@ export const chapters: Chapter[] = [
     ['Last one!', 'Happy birthday, Anjani. Thank you for being you ♡ You’re my favourite notification']].map(([t, d]) => ({ t, d })) },
   { id: '13', title: 'Make a Wish', kicker: 'Our forever', theme: 'navy', kind: 'rise', body: ['Happy', 'Birthday'], items: [
     { t: '🥹🧿', d: 'I wish you always keep that beautiful smile. ' + E },
-    { t: '😚🌸', d: 'I wish you achieve everything you're working for .' },
+    { t: '😚🌸', d: 'I wish you achieve everything you’re working for .' },
     { t: 'More of you', d: 'I wish life gives you more reasons to be happy.' },
     { t: 'Our promise', d: E + 'and i promise thay i will be with you in every situation.' }] },
   { id: '14', title: 'The Last Page', kicker: 'Fin', theme: 'ivory', kind: 'capsule', body: [
     'You made it to the last page.',
     'Whatever the year brings, I hope it brings you softness, luck, and people who adore you.',
-    E + 'And that's the end of this little magazine… but never the end of my favourite story. Happy birthday Anjani… here's to everything we've been and everything that's still waiting for us ♡.',
+    E + 'And that is the end of this little magazine… but never the end of my favourite story. Happy birthday Anjani… here is to everything we have been and everything that's still waiting for us ♡.',
     'A little love from me… growing with every memory ♡ Happy birthday, Partner ♡  '] },
   { id: '15', title: 'The Edition Archive', kicker: 'Revisit', theme: 'ivory', kind: 'tree', body: ['Here is to a year that blossoms'] },
 ]
