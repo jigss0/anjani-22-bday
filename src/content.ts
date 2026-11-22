@@ -15,14 +15,14 @@ export const chapters: Chapter[] = [
   { id: '01', title: 'The Envelope', kicker: 'For Jinie 🌸', theme: 'navy', kind: 'envelope', body: ['Something small and so precious for my baby, made slowly, just for you so sit back and slowly let it load and scroll it slowly read it and enjoy 🫶🏻'] },
   { id: '02', title: 'Anjani 🩷', kicker: "The Collector's Edition · One copy only", theme: 'green', kind: 'cover', items: [{ t: 'Her in my eyes', d: 'ILY' }, { t: 'The bus, the diary, the little things till now ', d: '23-26' }, { t: ' Something for every mood to make lighter', d: '25th' }] },
   { id: '03', title: "The Editor's Note", kicker: 'And her day starts 😚🧿', theme: 'ivory', kind: 'yesno', body: [
-    'Hi Anjani.',
+    'Hellow my Anjani.',
     'Most magazines are made for thousands of people. This one is made for exactly one, and she is the only reader that matters to me.',
-    'It started on a bus, with a conversation that somehow never really ended. Everything in here is a little proof of that.',
-    E + 'add one honest sentence about why you made this.',
+    'It started on a bus, with a conversation and look how far that little beginning has brought us. From our college memories to TRP Mall, our first kiss and all those silly little moments that became ours. Everything in here is a little proof of that.',
+    E + 'I made this to keep a little piece of our story somewhere special, because my favourite memories will always have you in them also its your day so it has to be something special.',
     'So sit comfortably, tap everything, and take your time. ♡'] },
-  { id: '04', title: 'Her, in Frame', kicker: 'Photography', theme: 'navy', kind: 'scratch', items: [
-    ['The smile', 'the one that shows up before you decide to'], ['The look', 'the one that says "really?"'], ['The laugh', 'impossible to be sad near it'],
-    ['The quiet', 'when you are thinking and pretending you are not'], ['The in-between', 'my favourite kind of photo'], ['The you', 'no caption needed']]
+  { id: '04', title: 'Her, in Frame 🌸', kicker: 'Photography', theme: 'navy', kind: 'scratch', items: [
+    ['Our Moments 😚', 'the one that shows up before you decide to kiss me '], ['The look', 'the one that says "really? and asks how she is so beautiful 😭"'], ['My Pookie 🎀', 'impossible to say her she looks so much adorable and she is the bestest '],
+    ['Her Cuteness ', 'How can someone look this pretty without even trying'], ['The in-between', 'Even the camera knows you're special'], ['The you in my eyes', 'And somehow I still can't get enough of you']]
     .map(([t, d], n) => ({ t, d: d + ' ' + E + 'swap for a real caption', img: `photos/frame-${n + 1}.jpg` })) },
   { id: '05', title: 'The Beginning', kicker: 'Fix the photo to read our story', theme: 'ivory', kind: 'puzzle', items: [
     { t: 'The bus', d: 'Two strangers, one bus, and a conversation that decided to stay. Best seat I never planned to take. ' + E + 'add the date and what you said first.' },
