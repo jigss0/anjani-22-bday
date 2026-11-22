@@ -12,7 +12,7 @@ export const PASSCODE = '2511' // her birthday, DDMM. A surprise gate, not real 
 const E = '[EDIT] '
 const nums = (n: number) => Array.from({ length: n }, (_, k) => k + 1)
 export const chapters: Chapter[] = [
-  { id: '01', title: 'The Envelope', kicker: 'For Anjani', theme: 'navy', kind: 'envelope', body: ['Something small, made slowly, just for you.'] },
+  { id: '01', title: 'The Envelope', kicker: 'For Jinie 🌸', theme: 'navy', kind: 'envelope', body: ['Something small and so precious for my baby, made slowly, just for you so sit back and slowly let it load and scroll it slowly read it and enjoy 🫶🏻'] },
   { id: '02', title: 'Anjani', kicker: "The Collector's Edition · One copy only", theme: 'green', kind: 'cover', items: [{ t: 'Her, in frame', d: '04' }, { t: 'The bus, the diary, the little things', d: '05–06' }, { t: 'Letters for every mood', d: '08' }] },
   { id: '03', title: "The Editor's Note", kicker: 'Why this exists', theme: 'ivory', kind: 'yesno', body: [
     'Hi Anjani.',
