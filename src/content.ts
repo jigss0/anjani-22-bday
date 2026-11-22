@@ -24,19 +24,19 @@ export const chapters: Chapter[] = [
     ['Our Moments 😚', 'the one that shows up before you decide to kiss me '], ['The look', 'the one that says "really? and asks how she is so beautiful 😭"'], ['My Pookie 🎀', 'impossible to say her she looks so much adorable and she is the bestest '],
     ['Her Cuteness ', 'How can someone look this pretty without even trying'], ['The in-between', 'Even the camera knows you're special'], ['The you in my eyes', 'And somehow I still can't get enough of you']]
     .map(([t, d], n) => ({ t, d: d + ' ' + E + 'swap for a real caption', img: `photos/frame-${n + 1}.jpg` })) },
-  { id: '05', title: 'The Beginning', kicker: 'Fix the photo to read our story', theme: 'ivory', kind: 'puzzle', items: [
-    { t: 'The bus', d: 'Two strangers, one bus, and a conversation that decided to stay. Best seat I never planned to take. ' + E + 'add the date and what you said first.' },
-    { t: 'The diary', d: 'I made you a diary, because some things deserve to be written down and kept. Every page was a way of saying "I was thinking of you". ' + E + 'add what you wrote on page one.' },
-    { t: 'Movies & small moments', d: 'We collect them: films, snacks, silly arguments, ordinary evenings that turned out not to be ordinary. ' + E + 'name your favourite film together.' },
-    { t: 'March 6', d: 'A date that quietly changed things. I think about it more than I admit. ' + E + 'say what happened.' },
-    { t: 'TRP Mall', d: 'Our first kiss. I will remember that place for the rest of my life. ' + E + 'add your own words.' },
-    { t: 'March 7', d: E + 'say what this milestone is. It deserves its own line.' }] },
+  { id: '05', title: 'It is Your Day 🫣💕', kicker: 'Fix the photo to read our story touch the photos then touch again where it fits 😉', theme: 'ivory', kind: 'puzzle', items: [
+    { t: 'The bus', d: 'Two strangers, one bus, and a conversation that decided to stay. Best seat I never planned to take. ' + E + 'the first convocation day to the our convocation day ... time flew and we grew 🫶🏻' },
+    { t: 'The diary', d: 'I made you a diary, because some things deserve to be written down and kept. Every page was a way of saying "I was thinking of you". ' + E + 'Then came all those little college moments with what i made for you.' },
+    { t: 'Movies & small moments', d: 'We collect them: films, snacks, silly arguments, ordinary evenings that turned out not to be ordinary. ' + E + 'From teri Bato mai uljha jiya 😂🤌🏻 to Dhuranadhar .' },
+    { t: 'March 6', d: 'A date that quietly changed things. I think about it more than I admit. ' + E + '6 March 2024… our first kiss at TRP Mall.' },
+    { t: 'TRP Mall', d: 'Our first kiss. I will remember that place for the rest of my life. ' + E + '5th floor and that bench and countless and so best memories.' },
+    { t: 'March 7', d: E + '7 March 2024… the day I asked you to be mine And it was little not professional i admit but 🥹🥹 ... that Kurkure moment became a part of our story too ♡.' }] },
   { id: '06', title: 'The Little Things', kicker: 'Pull the lever', theme: 'green', kind: 'slot', items: [
-    { t: 'The bus', d: 'It all began with a seat and a conversation that never really ended. Best ride of my life.' },
-    { t: 'The diary', d: 'I made it for you because some feelings need pages. ' + E + 'add what you wrote.' },
+    { t: 'What i loves most', d: 'The way you get all excited over little things.' },
+    { t: 'Your Face', d: 'Those adorable expressions you don't even notice. ' },
     { t: 'Movie nights', d: 'Even a bad film is a good film when you are next to me. ' + E },
-    { t: 'TRP Mall', d: 'Our first kiss. I still smile about it more than I admit.' },
-    { t: 'Your little habits', d: E + 'a habit of hers that you secretly love.' },
+    { t: 'TRP Mall', d: 'From Our first kiss yo till today we go to trp and remember everything ... I still smile about it more than I admit.' },
+    { t: 'Your little habits', d: E + 'like when yiu get angry and slaps me and then kiss my cheek.' },
     { t: 'Just you', d: 'No reason needed. Happy birthday, Anjani ♡' }] },
   { id: '07', title: 'The Archive', kicker: 'Exhibition', theme: 'ivory', kind: 'museum', items: nums(6).map(n => ({ t: `Exhibit ${String(n).padStart(2, '0')}`, d: E + 'date · place · what was happening', img: `photos/memory-${n}.jpg` })) },
   { id: '08', title: 'The Birthday Box', kicker: 'Open when…', theme: 'navy', kind: 'box', items: [
