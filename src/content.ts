@@ -22,7 +22,7 @@ export const chapters: Chapter[] = [
     'So sit comfortably, tap everything, and take your time. ♡'] },
   { id: '04', title: 'Her, in Frame 🌸', kicker: 'Photography', theme: 'navy', kind: 'scratch', items: [
     ['Our Moments 😚', 'the one that shows up before you decide to kiss me '], ['The look', 'the one that says "really? and asks how she is so beautiful 😭"'], ['My Pookie 🎀', 'impossible to say her she looks so much adorable and she is the bestest '],
-    ['Her Cuteness ', 'How can someone look this pretty without even trying'], ['The in-between', 'Even the camera knows you’re special'], ['The you in my eyes', 'And somehow I still can't get enough of you']]
+    ['Her Cuteness ', 'How can someone look this pretty without even trying'], ['The in-between', 'Even the camera knows you’re special'], ['The you in my eyes', 'And somehow I still cant get enough of you']]
     .map(([t, d], n) => ({ t, d: d + ' ' + E + 'swap for a real caption', img: `photos/frame-${n + 1}.jpg` })) },
   { id: '05', title: 'It is Your Day 🫣💕', kicker: 'Fix the photo to read our story touch the photos then touch again where it fits 😉', theme: 'ivory', kind: 'puzzle', items: [
     { t: 'The bus', d: 'Two strangers, one bus, and a conversation that decided to stay. Best seat I never planned to take. ' + E + 'the first convocation day to the our convocation day ... time flew and we grew 🫶🏻' },
@@ -69,7 +69,7 @@ export const chapters: Chapter[] = [
   { id: '14', title: 'The Last Page', kicker: 'Fin', theme: 'ivory', kind: 'capsule', body: [
     'You made it to the last page.',
     'Whatever the year brings, I hope it brings you softness, luck, and people who adore you.',
-    E + 'And that is the end of this little magazine… but never the end of my favourite story. Happy birthday Anjani… here is to everything we have been and everything that's still waiting for us ♡.',
+    E + 'And that is the end of this little magazine… but never the end of my favourite story. Happy birthday Anjani… here is to everything we have been and everything that is still waiting for us ♡.',
     'A little love from me… growing with every memory ♡ Happy birthday, Partner ♡  '] },
   { id: '15', title: 'The Edition Archive', kicker: 'Revisit', theme: 'ivory', kind: 'tree', body: ['Here is to a year that blossoms'] },
 ]
