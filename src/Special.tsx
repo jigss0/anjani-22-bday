@@ -36,7 +36,7 @@ export function Box({ items }: { items: Item[] }) {
   return <div className="cardbox">
     <div className="wall">
       <span className="mk m1">My darling…</span><span className="mk m2">you are my favourite person</span>
-      <span className="mk m3">Happy birthday, Anjani ♡</span><span className="st s1">★</span><span className="st s2">♡</span><span className="st s3">✦</span>
+      <span className="mk m3">Happiest Birthday Beautiful for this bday for my Anjani a digital gift box something new 🫶🏻 ♡</span><span className="st s1">★</span><span className="st s2">♡</span><span className="st s3">✦</span>
       <div className="tp t1"><Pic src="photos/box-1.jpg" label="photo 1" /></div><div className="tp t2"><Pic src="photos/box-2.jpg" label="photo 2" /></div>
       <div className="bunt">{row('HAPPY', 20, 200)}{row('BIRTHDAY', 78, 900)}</div>
       <div className="board nb">{items.map((x, i) => (
